@@ -11,7 +11,7 @@ let urls = [url1, url2, url3, url4, url5, url6, url7]
 let img = document.getElementById('myImg')
 let prevBtn = document.getElementById('prev')
 let nextBtn = document.getElementById('next')
-let playBnt = document.getElementById('play')
+let playBtn = document.getElementById('play')
 let stopBtn = document.getElementById('stop')
 
 let timerId
@@ -37,7 +37,7 @@ function nextSlide(){
     }
 }
 
-playBnt.addEventListener("click", function(){
+playBtn.addEventListener("click", function(){
     clearInterval(timerId)
     timerId = setInterval(function(){
         if(img.src === urls[urls.length - 1]){
